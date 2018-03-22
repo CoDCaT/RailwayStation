@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="codcat.magnitrailstation.feature.main_screen.fragments.DetailStationFragment">
+
+
+    <TextView
+        android:id="@+id/tv_about_station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_station"
+        android:textColor="@color/gray_50"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="16dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_Country_Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_50"
+        android:textSize="18sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/country"
+        android:layout_below="@+id/tv_about_station"
+        />
+
+    <TextView
+        android:id="@+id/tv_District_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_50"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_Country_Title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/district"
+        />
+
+    <TextView
+        android:id="@+id/tv_City_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_50"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_District_Title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/city"
+        />
+
+    <TextView
+        android:id="@+id/tv_Region_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_50"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_City_Title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/region"
+        />
+
+    <TextView
+        android:id="@+id/tv_Station_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_50"
+        android:textSize="18sp"
+        android:layout_below="@+id/tv_Region_Title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:text="@string/station"
+        />
+
+</RelativeLayout>

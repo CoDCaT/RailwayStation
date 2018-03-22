@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edMenuBackground="@color/white"
+    app:edMenuSize="280dp"
+    app:edPosition="1">
+
+    <FrameLayout
+        android:id="@+id/fragment_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:alpha="0"
+            android:id="@+id/view_overlay"
+            android:background="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+    <!--menu-->
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:layout_width="match_parent"
+                      android:layout_height="192dp"
+                      android:background="@color/white"
+                      android:gravity="center"
+                      android:orientation="vertical"
+                      android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+            <ImageView
+                android:id="@+id/iv_nav_header"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_train_black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="192dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_nav_find_ticket"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_find_ticket"
+                android:drawablePadding="12dp"
+                android:drawableStart="@drawable/ic_find_ticket"
+                android:gravity="start|center_vertical"
+                android:text="@string/find_tickets"
+                android:textColor="@color/black_a87"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_nav_all_stations"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_menu_station_list"
+                android:drawableStart="@drawable/ic_menu_station_list"
+                android:drawablePadding="12dp"
+                android:gravity="start|center_vertical"
+                android:text="@string/stations_list"
+                android:textColor="@color/black_a87"
+                android:textSize="18sp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/black_a87"/>
+
+            <TextView
+                android:id="@+id/tv_nav_about"
+                android:clickable="true"
+                android:focusable="true"
+                android:alpha="0.80"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:drawableLeft="@drawable/ic_info_outline_black_24dp"
+                android:drawablePadding="12dp"
+                android:drawableStart="@drawable/ic_info_outline_black_24dp"
+                android:gravity="start|center_vertical"
+                android:text="О приложении"
+                android:textColor="@color/black_a87"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>

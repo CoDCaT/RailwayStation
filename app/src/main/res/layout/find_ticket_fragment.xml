@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linear_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark"
+    android:orientation="vertical">
+
+    <TextView
+        android:drawableLeft="@drawable/icon_place_white_a200"
+        android:drawableStart="@drawable/icon_place_white_a200"
+        android:drawablePadding="4dp"
+        android:id="@+id/tv_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:text="@string/from"
+        android:textColor="@color/white_a200"
+        android:textSize="16sp"/>
+
+    <AutoCompleteTextView
+        android:textColor="@color/black_a87"
+        android:id="@+id/actv_station_from"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/auto_edit_frame"
+        android:hint="@string/departure_station"
+        android:minHeight="36dp"
+        android:padding="4dp"/>
+
+    <TextView
+        android:drawableLeft="@drawable/icon_place_white_a200"
+        android:drawableStart="@drawable/icon_place_white_a200"
+        android:drawablePadding="4dp"
+        android:id="@+id/tv_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:text="@string/to"
+        android:textColor="@color/white_a200"
+        android:textSize="16sp"/>
+
+    <AutoCompleteTextView
+        android:textColor="@color/black_a87"
+        android:id="@+id/actv_station_to"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/auto_edit_frame"
+        android:hint="@string/arrival_station"
+        android:minHeight="36dp"
+        android:padding="4dp"/>
+
+    <TextView
+        android:drawableLeft="@drawable/icon_date_white_a200"
+        android:drawableStart="@drawable/icon_date_white_a200"
+        android:drawablePadding="4dp"
+        android:id="@+id/tv_travel_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="2dp"
+        android:text="@string/travel_date"
+        android:textColor="@color/white_a200"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_a87"
+        android:id="@+id/tv_travel_date_choice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/auto_edit_frame"
+        android:text="@string/date_sample"
+        android:minHeight="36dp"
+        android:padding="4dp"/>
+
+    <Button
+        android:background="@color/white"
+        android:textColor="@color/primary_dark"
+        android:layout_marginEnd="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/find_tickets"
+        android:id="@+id/btn_find_tickets"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+</LinearLayout>
