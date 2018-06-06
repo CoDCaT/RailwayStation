@@ -44,3 +44,21 @@ https://proandroiddev.com/mvp-with-dagger-2-11-847d52c27c5a
            "checksum":"99776ddd31ad798895578593e78e3691"
         }
      }
+     
+     javax.crypto.BadPaddingException: pad block corrupted
+     
+     public String decrypt(final String encrypted) {
+        try {
+            final Cipher blowfishECB = Cipher.getInstance("Blowfish/ECB/PKCS5Padding");
+            final SecretKeySpec blowfishKey = new SecretKeySpec(Helper.DECRYPT_PASS.getBytes(), "Blowfish");
+            blowfishECB.init(Cipher.DECRYPT_MODE, blowfishKey);
+            final byte[] decryptedBytes = blowfishECB.doFinal(hexStringToByteArray(encrypted));
+
+            // First 4 bytes are garbage according to specification (deletes first 4 bytes)
+            final byte[] trimGarbage = Arrays.copyOfRange(decryptedBytes, 4, decryptedBytes.length);
+            return new String(trimGarbage, "UTF8");
+        } catch (final Exception e) {
+            return null;
+        }
+    }
+     
